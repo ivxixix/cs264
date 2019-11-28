@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Main Page ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <style>
+            img{
+                position: fixed;
+            }
+            header {
+                background-color: rgba(221, 93, 0);
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+                font: bold 50px Ekkamai Standard, normal ;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            body {
+                background-color: rgba(242, 241, 211);
+                font: bold 15px Ekkamai Standard, normal ;
+            }
+            table, th, td {
+                border: 1.5px solid white;
+                border-collapse: collapse;
+            }
+            th{
+                font-family: "Times New Roman", Times, serif;
+                font-size:55%;
+                padding: 7px;
+            }
+            td {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                font-size:55%;
+                padding: 4.5px;
+            }
+            form {
+                font-size:82%;
+                margin-top:0.1%;
+            }
+            b {
+                margin-left:2%;
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                padding: 30px;
+                background-color: rgba(155,155,155);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-container " style="background-color: rgba(221, 93, 0);">
+            <img src="pic/1.png" width="200" height="114" style ="margin-left:1%;" >
+            <h1>คำร้องเพิ่มวิชานอกเวลา</h1>
+        </div>
+        <div class="w3-sidebar w3-bar-block" style="background-color: rgba(41, 56, 88); width:15%">
+            <img src="pic/irene.jpg" width="150" height="150"  style ="border-radius: 50%; margin-left:2.5%; margin-top: 0.8%">
+            <a href="#" class="w3-bar-item w3-button" style="background-color: rgba(247, 188, 19); margin-top:75%;">ผลการจดทะเบียน</a>
+            <a href="status.html" class="w3-bar-item w3-button" style="background-color: rgba(247, 188, 19); margin-top:2.5%;">สถานะการยื่นคำร้อง</a>
+            <a href="log-in teacher.html" class="w3-bar-item w3-button w3-text-white" style="background-color: rgba(179, 30, 26); margin-top:2.5%;">ออกจากระบบ</a>
+        </div>
+        <div id="myContent" class="w3-container" 
+             style="margin-left:17%; margin-top:0.6%;">
+            <p style="font-size:100%; line-height: 0.55;">ข้อมูลส่วนตัว</p>
+            <p style="font-size:100%; line-height: 0.55;">นางสาว<b style="margin-left:2.5%">เบ จูฮยอน รหัสนักศึกษา 6109620134</b></p>
+            <p style="font-size:100%; line-height: 0.55;">สถานภาพ<b style="margin-left:1.5%;">ปกติ</b></p>
+            <p style="font-size:82%; line-height: 0.55;">ภาควิชา<b style="margin-left:3.1%">ภาควิชาวิทยาการคอมพิวเตอร์</b></p>
+            <p style="font-size:82%; line-height: 0.55;">สาขาวิชา<b style="margin-left:2.7%">สาขาวิชาวิทยาการคอมพิวเตอร์ (คอมพิวเตอร์และวิทยาการสารสนเทศ)</b></p>
+            <p style="font-size:82%; line-height: 0.55;">อ.ที่ปรึกษา<b>ผู้ช่วยศาสตราจารย์ ดร.ทรงศักดิ์ รองวิริยะพานิช</b></p>
+            <p style="font-size:82%; line-height: 0.55;">เบอร์ติดต่อ<b style="margin-left:1.9%">000-0000000</b></p>
+
+            <p style="font-size:100%; margin-top:1.8%; line-height: 0.2;">ผลการจดทะเบียน</p>
+            <table class="w3-light-gray" style="width:45%;">
+                <tr>
+                    <th class="w3-dark-gray">Day/Time</th>
+                    <th class="w3-dark-gray">8:00-9:00</th> 
+                    <th class="w3-dark-gray">9:00-10:00</th>
+                    <th class="w3-dark-gray">10:00-11:00</th>
+                    <th class="w3-dark-gray">11:00-12:00</th>
+                    <th class="w3-dark-gray">12:00-13:00</th>
+                    <th class="w3-dark-gray">13:00-14:00</th>
+                    <th class="w3-dark-gray">14:00-15:00</th>
+                    <th class="w3-dark-gray">15:00-16:00</th>
+                    <th class="w3-dark-gray">16:00-17:00</th>
+                </tr>
+                <tr>
+                    <td class="w3-text-white" style="background-color:#999999">จันทร์</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2" style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS300</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="w3-text-white" style="background-color:#999999">อังคาร</td>
+                    <td style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS299</td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS102</td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS221</td>
+                    <td style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS213</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="w3-text-white" style="background-color:#999999">พุธ</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2" style="background-color:#b3ccff; color: navy; text-decoration: underline;">EL295</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#d9d9d9; color: gray">CS264</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="w3-text-white" style="background-color:#999999">พฤหัสบดี</td>
+                    <td style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS299</td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS102</td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS221</td>
+                    <td style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS213</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="w3-text-white" style="background-color:#999999">ศุกร์</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2" style="background-color:#b3ccff; color: navy; text-decoration: underline;">CS245</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#d9d9d9; color: gray">CS264</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="w3-text-white" style="background-color: hsl(0, 40%, 50%)">เสาร์</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="w3-text-white" style="background-color: hsl(0, 40%, 50%)">อาทิตย์</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p style="font-size:100%; margin-top:1.5%; line-height: 0.5;">ค้นหารายวิชา</p>
+            <form action="/action_page.php">
+                ระดับการศึกษา
+                <select>
+                    <option value="ปริญญาตรี โครงการปกติ" selected>ทั้งหมด</option>
+                    <option value="ปริญญาตรี โครงการปกติ">ปริญญาตรี โครงการปกติ</option>
+                    <option value="ปริญญาตรี โครงการพิเศษ">ปริญญาตรี โครงการพิเศษ</option>
+                    <option value="ปริญญาโท โครงการปกติ">ปริญญาโท โครงการปกติ</option>
+                    <option value="ปริญญาโท โครงการพิเศษ">ปริญญาโท โครงการพิเศษ</option>
+                    <option value="ปริญญาเอก โครงการปกติ">ปริญญาเอก โครงการปกติ</option>
+                    <option value="ปริญญาเอก โครงการพิเศษ">ปริญญาเอก โครงการพิเศษ</option>
+                </select>
+                <b>ภาคการศึกษาที่</b>
+                <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                </select>
+                /
+                <input type="number" name="year" min="2555" max="2562">
+                <p> รหัสวิชา <input type="text" name="id">
+                    <b> ชื่อวิชา </b><input type="text" name="name">
+                    <button type="button">ค้นหา</button>
+                </p>
+            </form>
+            </div>
+        <footer></footer>
+    </body>
+</html>

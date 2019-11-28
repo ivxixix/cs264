@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Main Page ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <link rel="stylesheet" 
+              href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+
+            img{
+                position: fixed;
+            }
+            h1 {
+                text-align: center;
+                font: bold 50px Ekkamai Standard, normal ;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            h2 {
+                text-align: left;
+                font: bold 20px Ekkamai Standard, normal ;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            body {
+                background-color: rgba(242, 241, 211);
+                font: bold 15px Ekkamai Standard, normal ;
+            }
+            .w3-container1 {
+                background-color: rgba(247, 188, 19);
+                margin-right:30%;
+                margin-left:30%;
+            }
+            .w3-container3 {
+                background-color: rgba(247, 188, 19);
+                margin-left:2.5%;
+            }
+            input[type=text], select {
+                width: 118%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: block;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            .w3-container4{
+                background-color: rgba(247, 188, 19);
+                color: black;
+                padding: 1px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                line-height: 0.5;
+                width: 25%;
+            }
+            .w3-container5{
+                margin-left:47%;
+            }
+            .w3-container6{
+                margin-right:15%;
+            }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 30px;
+                background-color: rgba(155,155,155);
+            }
+            textarea {
+                font: bold 18px Ekkamai Standard, normal ;
+                width: 100%;
+                height: 100px;
+                padding: 12px 20px;
+                box-sizing: none;
+                border: 2px solid #fff;
+                border-radius: 4px;
+                background-color: white;
+                resize: none;
+            }
+            a:link, a:visited {
+                background-color: rgba(153, 216, 21);
+                color: black;
+                padding: 12px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: rgba(153, 216, 21);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-container " style="background-color: rgba(221, 93, 0);">
+            <img src="pic/1.png" width="200" height="114" style ="margin-left:1%;" >
+            <h1 style="margin-left:5%"> คำร้องของนักศึกษา</h1>
+        </div>
+
+        <div class="w3-sidebar w3-bar-block" style="background-color: rgba(41, 56, 88); width:15%">
+            <img src="pic/2_1.jpg" width="150" height="150"  style ="border-radius: 50%; margin-left:2.5%; margin-top: 0.8%" >
+            <a href="1.html" class="w3-bar-item w3-button" style="background-color: rgba(247, 188, 19); margin-top:75%;">คำร้องของนักศึกษา</a>
+            <a href="log-in students2.html" class="w3-bar-item w3-button w3-text-white" style="background-color: rgba(179, 30, 26); margin-top:2.5%;">ออกจากระบบ</a>
+        </div>
+        <br>
+        <div style="margin-top: 0.8%">
+            <div style="margin-top: 0.8%">
+                <div id="myContent" class="w3-container" 
+                     style="margin-left:47%">
+                    <form class="w3-container4" >
+                        <p style="text-align: center">
+                            <input class="w3-check" type="checkbox">
+                            <label>อนุมัติคำร้องเพิ่มวิชา</label></p>
+                    </form>
+                </div>
+                <br>
+                <div id="myContent" class="w3-container6" 
+                     style="margin-left:27%" >
+                    <div class="w3-card-4">
+                        <div class="w3-container" style="background-color: rgba(255, 255, 255);">
+                            <form>
+                                <textarea>ความคิดเห็น : </textarea>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="myContent" class="w3-container"
+                     style="margin-left:47%; margin-top: 1%">
+                    <form class="w3-container4"  >
+                        <p style="text-align: center">
+                            <input class="w3-check" type="checkbox">
+                            <label>ไม่อนุมัติคำร้องเพิ่มวิชา</label></p>  
+                    </form>
+                </div>
+                <br>
+                <div id="myContent" class="w3-container6" 
+                     style="margin-left:27%" >
+                    <div class="w3-card-4">
+                        <div class="w3-container" style="background-color: rgba(255, 255, 255);">
+                            <form>
+                                <textarea>ความคิดเห็น : </textarea>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div id="myContent" class="w3-container" 
+                     style="margin-left:50.5%">
+                    <form class="w3-container6 "  action="/action_page.php" >
+                        <a class="w3-text-white" style="border-radius: 4px;" href="4.html" >ยืนยัน</a>
+                    </form>
+                </div>
+                <div id="myContent" class="w3-container" 
+                     style="margin-left:15% ; margin-top: 3%">
+
+                    <form class="w3-container6 " action="/action_page.php" >
+                        <a style="border-radius: 4px; background-color: rgba(247,188,19); margin-left: 0.8%" href="2.html" >ย้อนกลับ</a>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </body>
+</html> 

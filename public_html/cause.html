@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Main Page ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <link rel="stylesheet" 
+              href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+
+            img{
+                position: fixed;
+            }
+            h1 {
+                text-align: center;
+                font: bold 50px Ekkamai Standard, normal ;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            body {
+                background-color: rgba(242, 241, 211);
+                font: bold 15px Ekkamai Standard, normal ;
+            }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 30px;
+                background-color: rgba(155,155,155);
+            }
+            textarea {
+                font: bold 18px Ekkamai Standard, normal ;
+                width: 100%;
+                height: 100px;
+                box-sizing: none;
+                border: 2px solid #fff;
+                border-radius: 4px;
+                background-color: white;
+                resize: none;
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                padding: 30px;
+                background-color: rgba(155,155,155);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-container " style="background-color: rgba(221, 93, 0);">
+            <img src="pic/1.png" width="200" height="114" style ="margin-left:1%;" >
+            <h1>คำร้องเพิ่มวิชานอกเวลา</h1>
+        </div>
+        <div class="w3-sidebar w3-bar-block" style="background-color: rgba(41, 56, 88); width:15%">
+            <img src="pic/irene.jpg" width="150" height="150"  style ="border-radius: 50%; margin-left:2.5%; margin-top: 0.8%">
+            <a href="form1.html" class="w3-bar-item w3-button" style="background-color: rgba(247, 188, 19); margin-top:75%;">ผลการจดทะเบียน</a>
+            <a href="status.html" class="w3-bar-item w3-button" style="background-color: rgba(247, 188, 19); margin-top:2.5%;">สถานะการยื่นคำร้อง</a>
+            <a href="log-in teacher.html" class="w3-bar-item w3-button w3-text-white" style="background-color: rgba(179, 30, 26); margin-top:2.5%;">ออกจากระบบ</a>
+        </div>
+
+        <div class="w3-card-4" style="margin-left: 25%; margin-right: 15%">
+            <div class="w3-container" style="background-color: rgba(255, 255, 255); margin-top: 10%; padding: 50px">
+                <form>
+                    <textarea style="line-height: 1.5">เหตุผลที่ยื่นคำร้อง : </textarea>
+                </form>
+            </div>
+        </div>
+        <a href="form4.html"><button class="w3-button w3-round-large w3-left"
+                                     style="margin-top: 16.15%; margin-left: 18%; font-size:100%; background-color: rgba(247, 188, 19)">ย้อนกลับ</button>
+        </a>
+        <p><button class="w3-button w3-round-large w3-center"
+                   onclick="document.getElementById('cf').style.display = 'block'"
+                   style="font-size:100%; background-color: rgba(153,216,21); margin-top: 2%; margin-left: 23%">ยืนยันการจดทะเบียน
+            </button>
+        </p>
+
+        <div id="cf" class="w3-modal" style="display: none">
+            <div class="w3-modal-content w3-card-4" style="width: 30%">
+                <div class="w3-white" style="padding: 25px; font-size:120%; margin-top: 35%">
+                    <p style="color: limegreen; text-align: center">ยื่นคำร้องจดทะเบียนเพิ่มเติม</p>
+                </div>
+                <div class="w3-container w3-center w3-white w3-padding">
+                    <a href="form5.html"><button class="w3-button w3-green w3-border">ตกลง</button></a>
+                </div>
+            </div>
+        </div>
+
+        <footer></footer>
+    </body>
+</html>

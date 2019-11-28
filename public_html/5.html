@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Main Page ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+        <link rel="stylesheet" 
+              href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            img{
+                position: fixed;
+            }
+            h1 {
+                text-align: center;
+                font: bold 50px Ekkamai Standard, normal ;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            h2 {
+                text-align: left;
+                font: bold 20px Ekkamai Standard, normal ;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            body {
+                background-color: rgba(242, 241, 211);
+                font: bold 15px Ekkamai Standard, normal ;
+            }
+            .w3-container1 {
+                background-color: rgba(247, 188, 19);
+                margin-right:30%;
+                margin-left:30%;
+            }
+            .w3-container3 {
+                background-color: rgba(247, 188, 19);
+                margin-left:2.5%;
+            }
+            input[type=text], select {
+                width: 97%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type=submit] {
+                background-color: rgba(247, 188, 19);
+                color: black;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .w3-container5{
+                margin-left:47%;
+            }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 30px;
+                background-color: rgba(155,155,155);
+            }
+            table {
+                font: bold 18px Ekkamai Standard, normal ;
+                border-collapse: collapse;
+                width: 75%;
+            }
+            td,th {
+            border: 2px solid black;
+            padding: 15px;
+            }
+            th,tr {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: white;
+            color: black;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="w3-container " style="background-color: rgba(221, 93, 0);">
+            <img src="pic/1.png" width="200" height="114" style ="margin-left:1%;" >
+            <h1 style="margin-left:5%"> คำร้องของนักศึกษา</h1>
+        </div>
+        
+         <div class="w3-sidebar w3-bar-block" style="background-color: rgba(41, 56, 88); width:15%">
+             <img src="pic/2_1.jpg" width="150" height="150"  style ="border-radius: 50%; margin-left:2.5%; margin-top: 0.8%" >
+            <a href="1.html" class="w3-bar-item w3-button" style="background-color: rgba(247, 188, 19); margin-top:75%;">คำร้องของนักศึกษา</a>
+            <a href="log-in students2.html" class="w3-bar-item w3-button w3-text-white" style="background-color: rgba(179, 30, 26); margin-top:2.5%;">ออกจากระบบ</a>
+        </div>
+        
+        <div id="myContent" class="w3-container" 
+             style="margin-left:17% ; margin-top:0.8%">
+            <div>
+                <br>
+                 <div>
+                <p style="color: black ; margin-top: 0.5%" >ข้อมูลส่วนตัว</p>
+                <p style="color: black ; margin-top: 0.2%">ชื่อ นายบุคลากร นามสกุล บุคลากรกว่า</p>
+                <p style="color: black ; margin-top: 0.2%">ตำแหน่ง อาจารย์ที่ปรึกษา/อาจารย์ผู้สอน/เจ้าหน้าที่คณะ</p>
+                <br><br>
+                <p style="color: black ;font: bold 20px Ekkamai Standard, normal ; margin-top: 0.5%">คำร้องรอการพิจารณา</p>
+                <p style="color: red ;margin-top: 0%">*คลิกที่ลิ้งในช่องเอกสารคำร้องเพื่อพิจราณาคำร้อง</p>
+                </div>
+            </div>
+            <br>
+            <table id="table">
+               <tr>
+                <th colspan = 2>คำร้องเพิ่มวิชานอกเวลา</th>
+                <th rowspan = 2>เอกสารคำร้อง</th>
+               </tr>
+               <tr>
+                <td>ชื่อนักศึกษา</td>
+                <td>สถานะ</td>
+               </tr>
+               <tr>
+                <td>นางสาว คัง ซึลกิ</td>
+                <td class="w3-text-red">ไม่อนุมัติ</td>
+                <td style="text-decoration: underline"><i class="fa fa-file-pdf-o" style="color:red">&nbsp;</i>6109620157</td>
+               </tr>
+               <tr>
+                <td>นางสาว เบ จูฮยอน</td>
+                <td style="color:rgba(153, 216, 21)">อนุมัติ</td>
+                <td><i class="fa fa-file-pdf-o" style="color:red"></i>&nbsp;<a href="22.html">6109620134</a></td>
+               </tr>
+            </table>
+        </div>
+        <div class="footer">
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Main Page ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <link rel="stylesheet" 
+              href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+
+            img{
+                position: fixed;
+            }
+            h1 {
+                text-align: center;
+                font: bold 50px Ekkamai Standard, normal ;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            h2 {
+                text-align: left;
+                font: bold 20px Ekkamai Standard, normal ;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            body {
+                background-color: rgba(242, 241, 211);
+                font: bold 15px Ekkamai Standard, normal ;
+            }
+            .w3-container1 {
+                background-color: rgba(247, 188, 19);
+                margin-right:30%;
+                margin-left:30%;
+            }
+            .w3-container3 {
+                background-color: rgba(247, 188, 19);
+                margin-left:2.5%;
+            }
+            input[type=text], select {
+                width: 97%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type=password], select {
+                width: 97%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type=submit] {
+                background-color: rgba(221, 93, 0);
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .w3-container5{
+                margin-left:47%;
+            }
+            button{
+                background-color: rgba(221, 93, 0);
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 30px;
+                background-color: rgba(155,155,155);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-container " style="background-color: rgba(221, 93, 0);">
+            <img src="pic/1.png" width="200" height="114" style ="margin-left:1%;" >
+            <h1>คำร้องเพิ่มวิชานอกเวลา</h1>
+        </div>
+
+        <div>
+            <p style="color: red ; margin-left:2%;" >เงื่อนไขการเข้าสู่ระบบเพิ่มวิชานอกเวลาสำหรับนักศึกษา</p>
+            <p style="color: red ; margin-left:2%;">**สำหรับนักศึกษาคณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมสาสตร์ ศูนย์รังสิตเท่านั้น</p>
+            <br><br>
+        </div>
+
+        <div id="myContent" class="w3-container1">
+
+            <div class="w3-card-4">
+                <div class="w3-container" style="background-color: rgba(247, 188, 19);">
+                    <h2> <i class="fas fa-lock-open"></i> เข้าสู่ระบบ (นักศึกษา/บุคลากร)</h2>
+                </div>
+                <form class="w3-container3" action="/action_page.php">
+                    <input type="text" name="username" 
+                           required 
+                           pattern="[0-9]*" maxlength="10" 
+                           placeholder="เลขทะเบียนนักศึกษา/รหัสผู้ใช้">
+
+                    <input type="password" name="password" 
+                           required
+                           pattern="[0-9]*" maxlength="13"
+                           placeholder="รหัสผ่าน">
+                </form> 
+                <br>
+                <i id="again" style="color: crimson; margin-left: 2.2%; font-size: 90%">*รหัสผู้ใช้หรือรหัสผ่านไม่ถูกต้อง โปรดลงชื่อเข้าสู่ระบบอีกครั้ง*</i>
+                <a href="opened.html"><button style="margin-left: 84%">submit</button></a>
+                <div class="w3-container5">
+                    <br>
+                    พบปัญหาในการเข้าสู่ระบบ <a href="http://helpdesk.tu.ac.th/login.php"> ติดต่อ HelpDesk สทส.</a>
+                    <br></br>
+                </div>
+            </div>   
+        </div>
+
+        <footer></footer>
+
+    </body>
+</html>
+
